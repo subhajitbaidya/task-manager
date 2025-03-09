@@ -1,21 +1,33 @@
 const User = require("../models/user.js");
 
 async function handleSignUp(req, res) {
-  const { name, mail, password } = req.body;
+  const { name, email, password } = req.body;
 
   if (!name || !email || !password)
     return res.status(400).json({ error: "All fields mandatory" });
 
-  const user = await User.create({
-    username: name,
-    email: email,
-    password: password,
-  });
+  const userAvailable = await User.findOne({ email });
+  if (userAvailable) {
+    return res.status(400).json({
+      error: "User already registered",
+    });
+  }
 
-  res.status(201).json({
-    message: `${user} created!`,
-    time: Date.now(),
-  });
+  try {
+    const user = await User.create({
+      username: name,
+      email: email,
+      password: password,
+    });
+
+    res.status(201).json({
+      message: `${user} created!`,
+      time: Date.now(),
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failure!" });
+  }
 }
 
 async function LoginUser(req, res) {
