@@ -3,12 +3,12 @@ const User = require("../models/user.js");
 async function handleSignUp(req, res) {
   const { name, mail, password } = req.body;
 
-  if (!name || !mail || !password)
+  if (!name || !email || !password)
     return res.status(400).json({ error: "All fields mandatory" });
 
   const user = await User.create({
     username: name,
-    email: mail,
+    email: email,
     password: password,
   });
 
@@ -25,7 +25,7 @@ async function LoginUser(req, res) {
     throw new Error("All fields mandatory!");
   }
 
-  const user = await User.findOne({ username, password });
+  const user = await User.findOne({ email, password });
   res.status(200).json({
     message: `User is Logged in as ${user}`,
   });
@@ -41,5 +41,5 @@ async function showUsers(req, res) {
 module.exports = {
   handleSignUp,
   showUsers,
-  LoginUser
+  LoginUser,
 };
