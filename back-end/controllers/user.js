@@ -18,6 +18,21 @@ async function handleSignUp(req, res) {
   });
 }
 
+async function LoginUser(req, res) {
+  const { email, password } = req.body;
+  if (!email || !password) {
+    res.status(400);
+    throw new Error("All fields mandatory!");
+  }
+
+  const user = await User.findOne({ username, password });
+  res.status(200).json({
+    message: `User is Logged in as ${user}`,
+  });
+
+  return user;
+}
+
 async function showUsers(req, res) {
   const users = await User.find({});
   res.status(200).json(users);
@@ -26,4 +41,5 @@ async function showUsers(req, res) {
 module.exports = {
   handleSignUp,
   showUsers,
+  LoginUser
 };

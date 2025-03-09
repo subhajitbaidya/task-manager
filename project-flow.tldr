@@ -74,88 +74,6 @@
 			"typeName": "shape"
 		},
 		{
-			"id": "pointer:pointer",
-			"typeName": "pointer",
-			"x": -131.1588592529297,
-			"y": 146.43229675292966,
-			"lastActivityTimestamp": 1741445901752,
-			"meta": {}
-		},
-		{
-			"followingUserId": null,
-			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:arrowheadStart": "none",
-				"tldraw:geo": "ellipse",
-				"tldraw:textAlign": "start",
-				"tldraw:color": "grey",
-				"tldraw:arrowheadEnd": "none"
-			},
-			"brush": null,
-			"scribbles": [],
-			"cursor": {
-				"type": "default",
-				"rotation": 0
-			},
-			"isFocusMode": false,
-			"exportBackground": true,
-			"isDebugMode": false,
-			"isToolLocked": false,
-			"screenBounds": {
-				"x": 0,
-				"y": 0,
-				"w": 1381.6666259765625,
-				"h": 785.8333129882812
-			},
-			"insets": [
-				false,
-				false,
-				true,
-				false
-			],
-			"zoomBrush": null,
-			"isGridMode": false,
-			"isPenMode": false,
-			"chatMessage": "",
-			"isChatting": false,
-			"highlightedUserIds": [],
-			"isFocused": true,
-			"devicePixelRatio": 1.2000000476837158,
-			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
-			"openMenus": [],
-			"isChangingStyle": false,
-			"isReadonly": false,
-			"meta": {},
-			"duplicateProps": null,
-			"id": "instance:instance",
-			"currentPageId": "page:page",
-			"typeName": "instance"
-		},
-		{
-			"editingShapeId": "shape:PjqfB53RNqMbSCcjnkd-p",
-			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:PjqfB53RNqMbSCcjnkd-p"
-			],
-			"hoveredShapeId": "shape:PjqfB53RNqMbSCcjnkd-p",
-			"erasingShapeIds": [],
-			"hintingShapeIds": [],
-			"focusedGroupId": null,
-			"meta": {},
-			"id": "instance_page_state:page:page",
-			"pageId": "page:page",
-			"typeName": "instance_page_state"
-		},
-		{
-			"x": 405.66404724121094,
-			"y": 227.4088287353516,
-			"z": 1,
-			"meta": {},
-			"id": "camera:page:page",
-			"typeName": "camera"
-		},
-		{
 			"x": -86.49739074707031,
 			"y": 78.42448425292969,
 			"rotation": 0,
@@ -497,41 +415,6 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 210.16932678222656,
-			"y": -206.57549285888675,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:7oa6eDlV5Vs0Ni6ArqaL_",
-			"type": "arrow",
-			"props": {
-				"dash": "draw",
-				"size": "m",
-				"fill": "none",
-				"color": "grey",
-				"labelColor": "black",
-				"bend": 0,
-				"start": {
-					"x": 0,
-					"y": 0
-				},
-				"end": {
-					"x": 3.48956298828125,
-					"y": 683.984375
-				},
-				"arrowheadStart": "none",
-				"arrowheadEnd": "none",
-				"text": "",
-				"labelPosition": 0.5,
-				"font": "draw",
-				"scale": 1
-			},
-			"parentId": "page:page",
-			"index": "aG0qA",
-			"typeName": "shape"
-		},
-		{
 			"x": -268.16404724121094,
 			"y": 100.92448425292966,
 			"rotation": 0,
@@ -555,6 +438,199 @@
 			},
 			"parentId": "page:page",
 			"index": "aH8oh",
+			"typeName": "shape"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 198.1398654656258,
+			"y": -297.2641378113776,
+			"lastActivityTimestamp": 1741543567918,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:geo": "rectangle",
+				"tldraw:color": "orange",
+				"tldraw:arrowheadStart": "none",
+				"tldraw:arrowheadEnd": "none",
+				"tldraw:size": "l"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1381.6666259765625,
+				"h": 536.6666259765625
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.2000000476837158,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": "shape:uRiMbQb4RY5AopSiWxP99",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:uRiMbQb4RY5AopSiWxP99"
+			],
+			"hoveredShapeId": null,
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 852.6719635287471,
+			"y": 614.7218524422136,
+			"z": 0.5974794760137064,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": -421.99984950029057,
+			"y": 535.0044962474193,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:1utH0JJfJfwcINDzkCNzV",
+			"type": "geo",
+			"props": {
+				"w": 1340.6142538940537,
+				"h": 1202.6033603568594,
+				"geo": "rectangle",
+				"color": "light-blue",
+				"labelColor": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"font": "draw",
+				"text": "",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": "",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aI5NK",
+			"typeName": "shape"
+		},
+		{
+			"x": -418.3387380267416,
+			"y": 490.43793878826654,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:spvCJaqpUYiRbp5nB8HqP",
+			"type": "arrow",
+			"props": {
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "light-green",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": -3.356129518017781,
+					"y": 1.9395544795484057
+				},
+				"end": {
+					"x": 1333.640683907675,
+					"y": 1.0896298873464048
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "none",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aJ5xn",
+			"typeName": "shape"
+		},
+		{
+			"x": -366.7330431975655,
+			"y": 548.161655285596,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:jNdawEFAcIvPQMtT3ACT5",
+			"type": "text",
+			"props": {
+				"color": "light-red",
+				"size": "m",
+				"w": 978.734375,
+				"text": "my-project/\n│── backend/                 # Backend code (Node.js + Express)\n│   ├── src/\n│   │   ├── config/          # Configuration files (DB, environment variables, etc.)\n│   │   │   ├── db.js\n│   │   │   ├── dotenv.js\n│   │   ├── controllers/     # Route handlers (Controller in MVC)\n│   │   │   ├── userController.js\n│   │   │   ├── authController.js\n│   │   ├── models/          # Database models (Model in MVC)\n│   │   │   ├── User.js\n│   │   │   ├── Post.js\n│   │   ├── routes/          # API routes (Connected to controllers)\n│   │   │   ├── userRoutes.js\n│   │   │   ├── authRoutes.js\n│   │   ├── middleware/      # Custom middleware (auth, validation, etc.)\n│   │   │   ├── authMiddleware.js\n│   │   │   ├── errorHandler.js\n│   │   ├── services/        # Business logic layer (Optional, but useful)\n│   │   │   ├── emailService.js\n│   │   │   ├── paymentService.js\n│   │   ├── utils/           # Utility functions (helpers, error handlers)\n│   │   │   ├── logger.js\n│   │   │   ├── jwtHelper.js\n│   │   ├── app.js           # Express app setup\n│   │   ├── server.js        # Entry point for backend\n│   ├── package.json\n│   ├── .env\n│── frontend/                # Frontend code (HTML, CSS, JavaScript)\n│   ├── assets/              # Images, fonts, etc.\n│   ├── css/                 # Stylesheets\n│   ├── js/                  # JavaScript files\n│   ├── index.html           # Main frontend file\n│   ├── dashboard.html       # Example additional frontend page\n│── public/                  # Static files (if served from Express)\n│── README.md",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aK17F",
+			"typeName": "shape"
+		},
+		{
+			"x": -270.4954278343879,
+			"y": -275.53432720290135,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:uRiMbQb4RY5AopSiWxP99",
+			"type": "text",
+			"props": {
+				"color": "orange",
+				"size": "l",
+				"w": 490.5703125,
+				"text": "Task-Manager-Application",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aL1bR",
 			"typeName": "shape"
 		}
 	]
