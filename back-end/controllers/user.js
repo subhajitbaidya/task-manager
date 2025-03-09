@@ -1,4 +1,5 @@
 const User = require("../models/user.js");
+const jwtService = require("../services/auth.js");
 
 async function handleSignUp(req, res) {
   const { name, email, password } = req.body;
@@ -38,8 +39,15 @@ async function LoginUser(req, res) {
   }
 
   const user = await User.findOne({ email, password });
+  if (!user) {
+    res.status(400);
+    throw new Error("User not found!");
+  }
+
+  const authToken = jwtService.setUser(user);
   res.status(200).json({
     message: `User is Logged in as ${user}`,
+    token: authToken,
   });
 
   return user;
