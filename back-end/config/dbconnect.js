@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+// Non blocking function to connect the backend to MongoDB.
 async function connectMongoDB(
   connection_string = process.env.CONNECTION_STRING
 ) {

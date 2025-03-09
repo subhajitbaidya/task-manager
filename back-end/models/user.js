@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Schema in which the user db will be created in mongoDB. 
 const userSchema = mongoose.Schema({
   username: {
     type: String,
