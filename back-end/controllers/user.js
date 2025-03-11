@@ -10,7 +10,7 @@ async function handleSignUp(req, res) {
   const userAvailable = await User.findOne({ email });
   if (userAvailable) {
     return res.status(400).json({
-      error: "User already registered",
+      error: "User already registered!",
     });
   }
 
@@ -38,19 +38,24 @@ async function LoginUser(req, res) {
     throw new Error("All fields mandatory!");
   }
 
-  const user = await User.findOne({ email, password });
-  if (!user) {
+  try {
+    const user = await User.findOne({ email, password });
+    if (!user) {
+      return res.status(400).json({ error: "User not found!" });
+    }
+
+    const authToken = jwtService.setUser(user);
+    res.status(200).json({
+      message: "Login Successful",
+      data: user,
+      token: authToken,
+    });
+
+    return user;
+  } catch (error) {
     res.status(400);
-    throw new Error("User not found!");
+    throw new Error("Login failed");
   }
-
-  const authToken = jwtService.setUser(user);
-  res.status(200).json({
-    message: `User is Logged in as ${user}`,
-    token: authToken,
-  });
-
-  return user;
 }
 
 async function showUsers(req, res) {

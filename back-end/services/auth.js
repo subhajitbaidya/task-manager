@@ -13,9 +13,9 @@ const setUser = (user) => {
 };
 
 const getUser = (token) => {
-  if (!token) return null;
   try {
-    return jwt.verify(token, secret);
+    const user = jwt.verify(token, secret);
+    return user;
   } catch (error) {
     return null;
   }

@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const { handleSignUp, showUsers, LoginUser } = require("../controllers/user");
-const validateToken = require("../middlewares/checkauth");
+const validateToken = require("../middlewares/checkauth.js");
 
-router.route("/").get(validateToken, showUsers).post(handleSignUp);
+router.get("/api/users", validateToken, showUsers);
+router.post("/signup", handleSignUp);
 router.post("/login", LoginUser);
 
 module.exports = router;
