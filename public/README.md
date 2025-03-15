@@ -15,4 +15,6 @@ Creating a task manager that leverages the power of AI to schedule your daily ta
 
 - Data pipeline for the ML model training with python(RAG)-To be implemented
 
+![Screenshot 2025-03-15 222415](https://github.com/user-attachments/assets/25a5e250-e591-412f-b508-1f63c7c886ae)
+
 
